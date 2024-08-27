@@ -1,7 +1,7 @@
 import { createElement } from '../render.js';
 
 
-const createFilterTemplate = () => (`
+const createFilterListTemplate = () => (`
     <form class="trip-filters" action="#" method="get">
         <div class="trip-filters__filter">
             <input id="filter-everything" class="trip-filters__filter-input  visually-hidden" type="radio"
@@ -32,9 +32,9 @@ const createFilterTemplate = () => (`
 `);
 
 
-export default class FilterView {
+export default class FilterListView {
   getTemplate() {
-    return createFilterTemplate();
+    return createFilterListTemplate();
   }
 
   getElement() {

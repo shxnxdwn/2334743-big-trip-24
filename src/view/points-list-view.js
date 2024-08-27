@@ -1,7 +1,7 @@
 import { createElement } from '../render.js';
 
 
-const createListTemplate = () => (`
+const createPointsListTemplate = () => (`
     <ul class="trip-events__list">
         <li class="trip-events__item">
             <div class="event">
@@ -341,9 +341,9 @@ const createListTemplate = () => (`
 `);
 
 
-export default class ListView {
+export default class PointsListView {
   getTemplate() {
-    return createListTemplate();
+    return createPointsListTemplate();
   }
 
   getElement() {

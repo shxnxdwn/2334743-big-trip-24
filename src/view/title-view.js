@@ -16,7 +16,7 @@ const createTitleTemplate = () => (`
 `);
 
 
-export default class SortView {
+export default class TitleView {
   getTemplate() {
     return createTitleTemplate();
   }
