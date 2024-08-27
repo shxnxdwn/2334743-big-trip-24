@@ -8,7 +8,7 @@ import TitleView from '../view/title-view.js';
 import { render } from '../render.js';
 
 export default class Presenter {
-  constructor({  }) {
+  constructor() {
   }
 
   list = new PointsListView();
