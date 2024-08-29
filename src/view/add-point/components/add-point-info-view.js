@@ -1,7 +1,7 @@
 import { createElement } from '../../../render.js';
 
 
-const createInfoEditTemplate = () => (`
+const createAddPointInfoTemplate = () => (`
   <header class="event__header">
     <div class="event__type-wrapper">
       <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -116,9 +116,9 @@ const createInfoEditTemplate = () => (`
 `);
 
 
-export default class InfoEditView {
+export default class AddPointInfoView {
   getTemplate() {
-    return createInfoEditTemplate();
+    return createAddPointInfoTemplate();
   }
 
   getElement() {

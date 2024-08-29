@@ -4,7 +4,7 @@ import { createElement } from '../../../render.js';
 const createDetailEditTemplate = () => '<section class="event__details"></section>';
 
 
-export default class DetailEditView {
+export default class EditPointDetailView {
   getTemplate() {
     return createDetailEditTemplate();
   }
