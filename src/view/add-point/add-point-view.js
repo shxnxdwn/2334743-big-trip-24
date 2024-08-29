@@ -1,7 +1,11 @@
 import { createElement } from '../../render.js';
 
 
-const createAddPointTemplate = () => '<form class="event event--edit" action="#" method="post"></form>';
+const createAddPointTemplate = () => (`
+  <li class="trip-events__item">
+    <form class="event event--edit" action="#" method="post"></form>
+  </li>
+`);
 
 
 export default class AddPointView {

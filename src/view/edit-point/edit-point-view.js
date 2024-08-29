@@ -1,7 +1,11 @@
 import { createElement } from '../../render.js';
 
 
-const createEditPointTemplate = () => '<form class="event event--edit" action="#" method="post"></form>';
+const createEditPointTemplate = () => (`
+  <li class="trip-events__item">
+    <form class="event event--edit" action="#" method="post"></form>
+  </li>
+`);
 
 
 export default class EditPointView {
