@@ -3,8 +3,8 @@ import FilterListView from './view/filter-list/filter-list-view.js';
 import PointListPresenter from './presenter/point-list-presenter.js';
 import AddPointPresenter from './presenter/add-point-presenter.js';
 import EditPointPresenter from './presenter/edit-point-presenter.js';
+import SortListView from './view/sort-list/sort-list-view.js';
 import { render, RenderPosition } from './render.js';
-import SortListView from "./view/sort-list/sort-list-view";
 
 
 const renderHeader = () => {
