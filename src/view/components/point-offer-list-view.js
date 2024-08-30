@@ -1,7 +1,7 @@
-import { createElement } from '../../../render.js';
+import { createElement } from '../../render.js';
 
 
-const createAddPointOfferListTemplate = () => (`
+const createPointOfferListTemplate = () => (`
   <section class="event__section  event__section--offers">
     <h3 class="event__section-title  event__section-title--offers">Offers</h3>
 
@@ -60,9 +60,9 @@ const createAddPointOfferListTemplate = () => (`
 `);
 
 
-export default class AddPointOfferListView {
+export default class PointOfferListView {
   getTemplate() {
-    return createAddPointOfferListTemplate();
+    return createPointOfferListTemplate();
   }
 
   getElement() {

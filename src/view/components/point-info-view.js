@@ -1,7 +1,7 @@
-import { createElement } from '../../../render.js';
+import { createElement } from '../../render.js';
 
 
-const createEditPointInfoTemplate = () => (`
+const createPointInfoTemplate = () => (`
   <header class="event__header">
     <div class="event__type-wrapper">
       <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -116,9 +116,9 @@ const createEditPointInfoTemplate = () => (`
 `);
 
 
-export default class EditPointInfoView {
+export default class PointInfoView {
   getTemplate() {
-    return createEditPointInfoTemplate();
+    return createPointInfoTemplate();
   }
 
   getElement() {
