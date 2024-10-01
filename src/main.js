@@ -5,6 +5,9 @@ import AddPointPresenter from './presenter/add-point-presenter';
 import EditPointPresenter from './presenter/edit-point-presenter';
 import SortListView from './view/sort-list/sort-list-view';
 import { render, RenderPosition } from './render';
+import PointsModel from "./model/points-model";
+
+const pointsModel = new PointsModel();
 
 
 const renderHeader = () => {
@@ -20,7 +23,7 @@ const renderMain = () => {
   const tripListContainer = document.querySelector('.trip-events');
   render(new SortListView(), tripListContainer);
 
-  const pointListPresenter = new PointListPresenter({ pointListContainer: tripListContainer });
+  const pointListPresenter = new PointListPresenter({ pointListContainer: tripListContainer, pointsModel });
   pointListPresenter.init();
 
   const pointList = tripListContainer.querySelector('.trip-events__list');

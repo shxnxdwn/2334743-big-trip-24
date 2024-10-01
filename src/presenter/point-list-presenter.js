@@ -1,18 +1,21 @@
 import PointView from '../view/point/point-view';
 import PointListView from '../view/point-list/point-list-view';
 import { render } from '../render';
-import { POINT_COUNT } from '../constants';
 
 
 export default class PointListPresenter {
-  constructor({ pointListContainer }) {
+  constructor({ pointListContainer, pointsModel }) {
     this.pointListContainer = pointListContainer;
+    this.pointsModel = pointsModel;
   }
 
   pointListComponent = new PointListView();
 
   init() {
-    for (let i = 0; i < POINT_COUNT; i++) {
+    this.pointList = [...this.pointsModel.getPoints()];
+
+
+    for (let i = 0; i < this.pointsModel; i++) {
       render(new PointView(), this.pointListComponent.getElement());
     }
 

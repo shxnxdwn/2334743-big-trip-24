@@ -20,4 +20,16 @@ export default class PointsModel {
   getOffers() {
     return this.offers;
   }
+
+  getDestinationsById(id) {
+    return this.destinations.find((item) => item.id === id);
+  }
+
+  getOffersById(id) {
+    return this.offers.find((item) => item.id === id);
+  }
+
+  getOffersByType(type) {
+    return this.offers.find((item) => item.type === type);
+  }
 }
