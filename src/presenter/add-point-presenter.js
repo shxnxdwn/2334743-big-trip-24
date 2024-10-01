@@ -1,9 +1,9 @@
-import AddPointView from '../view/add-point/add-point-view.js';
-import PointInfoView from '../view/components/point-info-view.js';
-import PointDetailView from '../view/components/point-detail-view.js';
-import AddPointDestinationView from '../view/components/add-point-destination-view.js';
-import PointOfferListView from '../view/components/point-offer-list-view.js';
-import { render, RenderPosition } from '../render.js';
+import AddPointView from '../view/add-point/add-point-view';
+import PointInfoView from '../view/components/point-info-view';
+import PointDetailView from '../view/components/point-detail-view';
+import AddPointDestinationView from '../view/components/add-point-destination-view';
+import PointOfferListView from '../view/components/point-offer-list-view';
+import { render, RenderPosition } from '../render';
 
 
 export default class AddPointPresenter {

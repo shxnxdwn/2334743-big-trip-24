@@ -1,7 +1,7 @@
-import PointView from '../view/point/point-view.js';
-import PointListView from '../view/point-list/point-list-view.js';
-import { render } from '../render.js';
-import { POINT_COUNT } from '../constants.js';
+import PointView from '../view/point/point-view';
+import PointListView from '../view/point-list/point-list-view';
+import { render } from '../render';
+import { POINT_COUNT } from '../constants';
 
 
 export default class PointListPresenter {

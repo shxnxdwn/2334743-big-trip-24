@@ -1,1 +1,3 @@
-export const POINT_COUNT = 3;
+const POINT_COUNT = 4;
+
+export { POINT_COUNT };
